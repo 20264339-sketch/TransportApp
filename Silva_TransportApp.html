@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Transportation App</title>
+</head>
+
+<body id="top">
+
+    <header>
+        <h1>QuickSilva</h1>
+        <header>
+
+            <img src="buslogo.png"
+                 alt="buslogo.png"
+                 width="150"
+                 height="150">
+        
+            <p><em>Your simple transportation app for safe and easy travel.</em></p>
+        
+            <nav>
+                <a href="#book">Book a Ride</a> |
+                <a href="#fleet">Our Vehicles</a> |
+                <a href="#map">Map</a> |
+                <a href="#media">Media</a> |
+                <a href="#schedule">Schedule</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+        
+            <hr>
+
+        
+
+        
+
+
+    <main>
+
+        <!-- BOOKING SECTION -->
+
+        <section id="book">
+
+            <h2>Book a Ride</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Trip Details</legend>
+
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname"
+                               placeholder="Enter your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="09XXXXXXXXX" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="example@email.com">
+                    </p>
+
+                    <p>
+                        <label for="pickup">Pickup Location:</label>
+                        <input type="text" id="pickup" name="pickup"
+                               list="places">
+
+                        <datalist id="places">
+                            <option value="Luneta Park">
+                            <option value="Baguio City">
+                            <option value="Central Terminal">
+                            <option value="Burnham Park">
+                            <option value="Session Road">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="dropoff">Drop-off Location:</label>
+                        <input type="text" id="dropoff" name="dropoff"
+                               list="places">
+                    </p>
+
+                    <p>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </p>
+
+                    <p>
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </p>
+
+                    <p>
+                        <label for="passengers">Number of Passengers:</label>
+                        <input type="number" id="passengers" name="passengers"
+                               min="1" max="10" value="1">
+                    </p>
+
+                    <p>
+                        <label for="vehicle">Vehicle Type:</label>
+
+                        <select id="vehicle" name="vehicle">
+                            <option value="taxi">Taxi</option>
+                            <option value="kalesa">Kalesa</option>
+                            <option value="batmobile">Bat Mobile</option>
+                            <option value="bus">Bus</option>
+                            <option value="helicopter">Helicopter</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        Payment Method:
+                    </p>
+
+                    <p>
+                        <input type="radio" id="cash" name="payment" value="cash" checked>
+                        <label for="cash">Cash</label>
+
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Card</label>
+
+                        <input type="radio" id="ewallet" name="payment" value="ewallet">
+                        <label for="ewallet">E-Wallet</label>
+                    </p>
+
+                    <p>
+                        Extras:
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="luggage" name="extras" value="luggage">
+                        <label for="luggage">Extra luggage</label>
+
+                        <input type="checkbox" id="childseat" name="extras" value="childseat">
+                        <label for="childseat">Child seat</label>
+
+                        <input type="checkbox" id="wheelchair" name="extras" value="wheelchair">
+                        <label for="wheelchair">Wheelchair accessible</label>
+                    </p>
+
+                    <p>
+                        <label for="notes">Notes for the driver:</label><br>
+
+                        <textarea id="notes" name="notes"
+                                  rows="5" cols="40"
+                                  placeholder="Enter notes"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms" name="terms" required>
+
+                        <label for="terms">
+                            I agree to the
+                            <a href="#terms-info">Terms & Conditions</a>
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Book Now">
+                        <input type="reset" value="Clear">
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+            <hr>
+
+        </section>
+
+
+        <!-- VEHICLES SECTION -->
+
+        <section id="fleet">
+
+            <h2>Our Vehicles</h2>
+
+            <figure>
+                <img src="taxi.jpg"
+                     alt="Taxi"
+                     width="400"
+                     height="250">
+
+                <figcaption>
+                    <strong>Taxi</strong> - A simple vehicle for short trips.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="kalesa.jpg"
+                     alt="Kalesa"
+                     width="400"
+                     height="250">
+
+                <figcaption>
+                    <strong>Kalesa</strong> - A traditional horse-drawn vehicle.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="bat.jpg"
+                     alt="Bat Mobile"
+                     width="400"
+                     height="250">
+
+                <figcaption>
+                    <strong>Bat Mobile</strong> - A special vehicle for fast trips.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="bus.jpg"
+                     alt="Bus"
+                     width="400"
+                     height="250">
+
+                <figcaption>
+                    <strong>Bus</strong> - A vehicle for carrying many passengers.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="heli.jpg"
+                     alt="Helicopter"
+                     width="400"
+                     height="250">
+
+                <figcaption>
+                    <strong>Helicopter</strong> - A fast vehicle for air travel.
+                </figcaption>
+            </figure>
+
+            <p>Choose the vehicle that best fits your trip.</p>
+
+            <hr>
+
+        </section>
+
+
+        <!-- MAP SECTION -->
+
+        <section id="map">
+
+            <h2>Find Our Location</h2>
+
+            <p>
+                Our main location is Luneta Park.
+            </p>
+
+            <p>
+                <a href="https://www.google.com/maps/search/luneta+park/@15.4953951,120.1261343,9z"
+                   target="_blank"
+                   rel="noopener">
+                    View Luneta Park on Google Maps
+                </a>
+            </p>
+
+            <hr>
+
+        </section>
+
+
+        <!-- MEDIA SECTION -->
+
+        <section id="media">
+
+            <h2>Media</h2>
+
+            <h3>QuickSilva Video</h3>
+
+            <video width="480" controls poster="vidad.mp4">
+
+                <source src="vidad.mp4" type="video/mp4">
+
+                <source src="vidad.mp4" type="video/ogg">
+
+                Your browser does not support the video element.
+
+            </video>
+
+
+            <h3>QuickSilva Audio</h3>
+
+            <audio controls>
+
+                <source src="audio.mp3" type="audio/mpeg">
+
+                <source src="audio.mp3" type="audio/ogg">
+
+                Your browser does not support the audio element.
+
+            </audio>
+
+
+            <h3>QuickSilva YouTube Video</h3>
+
+            <iframe width="560"
+                    height="315"
+                    src="videoplayback.mp4"
+                    title="QuickSilva YouTube Video"
+                    allowfullscreen>
+            </iframe>
+
+            <hr>
+
+        </section>
+
+
+        <!-- SCHEDULE SECTION -->
+
+        <section id="schedule">
+
+            <h2>Schedule</h2>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+
+                <caption>Daily departures from Luneta Park</caption>
+
+                <thead>
+
+                    <tr>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Fare</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Luneta Park</td>
+                        <td>8:00 AM</td>
+                        <td>8:30 AM</td>
+                        <td>₱50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Baguio City</td>
+                        <td>9:00 AM</td>
+                        <td>10:00 AM</td>
+                        <td>₱100</td>
+                    </tr>
+
+                    <tr>
+                        <td>Intramuros</td>
+                        <td>10:00 AM</td>
+                        <td>10:30 AM</td>
+                        <td>₱60</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>11:00 AM</td>
+                        <td>11:30 AM</td>
+                        <td>₱70</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <h3>Search Route</h3>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="route">Select Route:</label>
+
+                    <select id="route" name="route">
+
+                        <option value="luneta">Luneta Park</option>
+                        <option value="baguio">Baguio City</option>
+                        <option value="burnham">Burnham Park</option>
+                        <option value="session">Session Road</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="Search">
+                </p>
+
+            </form>
+
+            <hr>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <h3>Send Feedback</h3>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+
+                    <legend>Send Feedback</legend>
+
+                    <p>
+                        <label for="feedback-name">Name:</label>
+
+                        <input type="text"
+                               id="feedback-name"
+                               name="feedback-name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="rating">Rating:</label>
+
+                        <input type="range"
+                               id="rating"
+                               name="rating"
+                               min="1"
+                               max="5"
+                               value="5">
+                    </p>
+
+                    <p>
+                        <label for="topic">Topic:</label>
+
+                        <select id="topic" name="topic">
+
+                            <option value="compliment">Compliment</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="lost-item">Lost Item</option>
+                            <option value="suggestion">Suggestion</option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="feedback">Feedback:</label><br>
+
+                        <textarea id="feedback"
+                                  name="feedback"
+                                  rows="5"
+                                  cols="40"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="file">Upload Image:</label>
+
+                        <input type="file"
+                               id="file"
+                               name="file"
+                               accept="image/*">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Send Feedback">
+                    </p>
+
+                </fieldset>
+
+            </form>
+
+
+            <h3>Reach Us</h3>
+
+            <address>
+
+                QuickSilva Transportation App<br>
+                Luneta Park<br>
+                Philippines<br><br>
+
+                Phone:
+                <a href="tel:+639153380545">
+                    +63 9153380545
+                </a>
+                <br>
+
+                Email:
+                <a href="20264339@s.ubaguio.edu">
+                    20264339@s.ubaguio.edu
+                </a>
+
+            </address>
+
+            <hr>
+
+        </section>
+
+
+        <!-- USEFUL LINKS -->
+
+        <section>
+
+            <h2>Useful Links</h2>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.openstreetmap.org"
+                       target="_blank"
+                       rel="noopener">
+                        OpenStreetMap
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com/maps"
+                       target="_blank"
+                       rel="noopener">
+                        Google Maps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com"
+                       target="_blank"
+                       rel="noopener">
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#top">
+                        Back to Top
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- TERMS SECTION -->
+
+        <section id="terms-info">
+
+            <h2>Terms and Conditions</h2>
+
+            <details>
+
+                <summary>Read the terms</summary>
+
+                <ol>
+
+                    <li>Passengers must provide correct booking information.</li>
+
+                    <li>Passengers must follow the rules of the vehicle.</li>
+
+                    <li>Passengers must respect the driver and other passengers.</li>
+
+                </ol>
+
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <hr>
+
+        <p>
+            &copy; 2026 QuickSilva. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
